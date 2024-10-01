@@ -1,60 +1,44 @@
-# Python Code Example
+# Python String Manipulation and Class Scores Program
 
-This repository contains Python code snippets that perform various operations on data and dictionaries. Below, we provide a brief explanation of each code section.
+## Description
+This repository contains Python programs that showcase basic string manipulation, tuple handling, and dictionary operations. The programs also demonstrate the use of loops, conditional logic, and data processing to handle various tasks, such as reversing names, calculating average class scores, and finding specific words in a sentence.
 
-## Reversing and Sorting a List of Tuples
+## Table of Contents
+- [Tuple Reversal and Sorting](#tuple-reversal-and-sorting)
+- [Class Scores Average Calculation](#class-scores-average-calculation)
+- [Detailed Class Scores](#detailed-class-scores)
+- [Finding Specific Words in a Sentence](#finding-specific-words-in-a-sentence)
 
-### Code
+---
 
-```python
-old = [("fareedi", "Talha"), ("Amaad", "Akram"), ("ijaz", "Aiza")]
-new = []
+### Tuple Reversal and Sorting
 
-for name in old:
-    reverse_tuple = tuple(reversed(name))
-    new.extend(reverse_tuple)
+This program processes a list of names in a tuple format and reverses the order of each tuple. The reversed names are then stored in a new list, and the list is sorted alphabetically.
 
-print("Printing the Reversed List of strings:\n")
-print(new)
+---
 
-sorted_new = sorted(new)
-print("Printing Sorted List:\n")
-print(sorted_new)
-This code takes a list of tuples old, reverses each tuple, and appends the reversed elements to a new list new. It then prints the reversed list and a sorted version of it
+### Class Scores Average Calculation
 
-Searching for a Word in User Input
-Code
-python
-Copy code
-a = input("Enter a desired value: ")
+This program calculates the average scores of students across multiple subjects. The data is organized in a dictionary where each class has a list of students and their respective scores. The program iterates through each class and calculates the average score.
 
-for word in a.split():
-    if word.lower() == 'python':
-        print("Yes, the word 'Python' is found.")
-    else:
-        print("No 'Python' word found.")
-In this code, the user is prompted to enter a string (a). The code then splits the input into words and checks if any of them are equal to 'python' (case-insensitive). It prints a message based on whether 'Python' is found in the input.
+---
 
-Dictionary Example
-Code
-python
-Copy code
-dic = {
-    "Math_class": {
-        "Ahmad": 80,
-        "Aiza": 70,
-        "Talha": 75
-    },
-    "English_class": {
-        "Ahmad": 80,
-        "Aiza": 70,
-        "Talha": 75
-    },
-    "Physics_class": {
-        "Ahmad": 80,
-        "Aiza": 70,
-        "Talha": 75
-    }
-}
-This code snippet defines a nested dictionary dic representing student scores in different classes. Each class has a sub-dictionary with student names as keys and their corresponding scores as values.
+### Detailed Class Scores
 
+An extended version of the class scores program that prints the individual scores for each student along with the class name. This allows for a more detailed overview of student performance in each subject.
+
+---
+
+### Finding Specific Words in a Sentence
+
+This program checks whether the word "Python" is present in a given sentence. It splits the sentence into words, iterates through them, and prints a message if the word "Python" is found.
+
+---
+
+## How to Run the Programs
+1. Ensure you have Python 3.x installed on your system.
+2. Clone this repository to your local machine.
+3. Run each Python program in your preferred development environment or directly from the command line.
+
+## Author
+This project was developed by **Talha Fareedi** as part of learning and practicing basic Python concepts, including string manipulation, tuple operations, and dictionary handling.
